@@ -1,0 +1,5 @@
+black_sylius_cookie_alert:
+    ui:
+        message: <b>Vous aimez les cookies ?</b> &#x1F36A; Nous en utilisons pour améliorer votre expérience sur notre site.
+        link: En savoir plus
+        agree: J'accepte
