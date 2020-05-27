@@ -3,7 +3,14 @@
     "type": "sylius-plugin",
     "keywords": ["sylius", "sylius-plugin"],
     "description": "Add cookie alert to your shop",
-    "license": "MIT",
+    "license": "EUPL-1.2-or-later",
+    "authors": [
+        {
+            "name": "Alexandre Balmes",
+            "email": "sylius@alexandre.balmes.co",
+            "homepage": "https://alexandre.balmes.co"
+        }
+    ],
     "require": {
         "php": "^7.3",
         "sylius/sylius": "^1.7"
