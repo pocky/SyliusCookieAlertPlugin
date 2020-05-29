@@ -3,7 +3,7 @@
     "type": "sylius-plugin",
     "keywords": ["sylius", "sylius-plugin"],
     "description": "Add cookie alert to your shop",
-    "license": "EUPL-1.2-or-later",
+    "license": "EUPL-1.2",
     "authors": [
         {
             "name": "Alexandre Balmes",
