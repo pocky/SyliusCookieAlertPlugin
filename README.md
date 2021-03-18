@@ -37,7 +37,7 @@ return [
 ```yaml
 # config/packages/sylius_cookie_alert.yaml
 imports:
-    - { resource: "@BlackSyliusCookieAlertPlugin/Resources/config/app/config.yml" }
+    - { resource: "@BlackSyliusCookieAlertPlugin/config/config.php" }
 ```
 
 5. Add the cookie-alert javascript dependency `yarn add bootstrap-cookie-alert`
@@ -68,8 +68,7 @@ sylius_ui:
 ```
 
 ## License and Copyright
-
-tl;dr:
+- tl;dr :
 - Modifications must be shared,
 - It's possible to use this plugin in a commercial project,
 - A commercial license is available.
