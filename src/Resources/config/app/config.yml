@@ -1,7 +1,0 @@
-sylius_ui:
-    events:
-        sylius.shop.layout.after_body:
-            blocks:
-                cookie:
-                    template: "@BlackSyliusCookieAlertPlugin/_cookieAlert.html.twig"
-                    priority: 1
