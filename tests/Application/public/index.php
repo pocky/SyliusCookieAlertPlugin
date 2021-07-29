@@ -1,7 +1,9 @@
 <?php
 
-use Tests\Acme\SyliusExamplePlugin\Application\Kernel;
-use Symfony\Component\Debug\Debug;
+declare(strict_types=1);
+
+use Black\Tests\SyliusCookieAlertPlugin\Application\Kernel;
+use Symfony\Component\ErrorHandler\Debug;
 use Symfony\Component\HttpFoundation\Request;
 
 require dirname(__DIR__) . '/config/bootstrap.php';

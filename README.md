@@ -37,7 +37,7 @@ return [
 ```yaml
 # config/packages/sylius_cookie_alert.yaml
 imports:
-    - { resource: "@BlackSyliusCookieAlertPlugin/config/config.php" }
+    - { resource: "@BlackSyliusCookieAlertPlugin/config/app/config.php" }
 ```
 
 5. Add the cookie-alert javascript dependency `yarn add bootstrap-cookie-alert`
