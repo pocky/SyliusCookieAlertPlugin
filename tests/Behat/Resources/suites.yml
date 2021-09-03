@@ -1,4 +1,13 @@
 # Put your Behat suites definitions here
 
 default:
-    suites: ~
+    suites:
+        cookie_alert:
+            contexts:
+                - sylius.behat.context.hook.doctrine_orm
+                
+                - sylius.behat.context.setup.channel
+                - black_sylius_cookie_alert.behat.context.ui.shop.cookie_alert
+
+            filters:
+                tags: "@cookie_alert"

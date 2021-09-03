@@ -4,5 +4,16 @@
     <services>
         <defaults public="true" />
         <!-- Put your Behat services here -->
+
+        <service id="black_sylius_cookie_alert.behat.context.ui.shop.cookie_alert"
+                 class="Black\Tests\SyliusCookieAlertPlugin\Behat\Context\Ui\Shop\CookieAlertContext">
+            <argument type="service" id="black_sylius_cookie_alert.behat.page.shop.home" />
+        </service>
+
+        <service id="black_sylius_cookie_alert.behat.page.shop.home"
+                 class="Black\Tests\SyliusCookieAlertPlugin\Behat\Page\Shop\HomePage"
+                 parent="sylius.behat.page.shop.home"
+                 public="false" />
+
     </services>
 </container>

@@ -55,7 +55,8 @@ imports:
 
 ## Usage
 
-This plugin adds a new block in `sylius.shop.layout.after_body` with `src/Resources/views/_cookieAlert.html.twig`. Feel free to change this behavior, override the template but I think you should use events...
+This plugin adds a new block in `sylius.shop.layout.after_body` with `src/Resources/views/_cookieAlert.html.twig`. 
+Feel free to change this behavior, override the template but I think you should use events...
 
 ```yaml
 sylius_ui:
