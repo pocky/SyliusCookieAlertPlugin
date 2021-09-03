@@ -1,8 +1,11 @@
 {
     "name": "black/sylius-cookie-alert-plugin",
     "type": "sylius-plugin",
+    "keywords": [
+        "sylius",
+        "sylius-plugin"
+    ],
     "description": "Add cookie alert to your shop",
-    "keywords": ["sylius", "sylius-plugin"],
     "license": "EUPL-1.2",
     "authors": [
         {
@@ -13,7 +16,7 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "sylius/sylius": "~1.9 || ~1.10"
+        "sylius/sylius": "~1.9.0 || ~1.10.0"
     },
     "require-dev": {
         "behat/behat": "^3.6.1",
@@ -45,7 +48,14 @@
         "symfony/web-profiler-bundle": "^4.4 || ^5.2",
         "vimeo/psalm": "4.7.1"
     },
-    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.10-dev"
+        }
+    },
     "autoload": {
         "psr-4": {
             "Black\\SyliusCookieAlertPlugin\\": "src"
@@ -57,9 +67,6 @@
             "Black\\Tests\\SyliusCookieAlertPlugin\\": "tests/"
         }
     },
-    "config": {
-        "sort-packages": true
-    },
     "scripts": {
         "post-install-cmd": [
             "php bin/create_node_symlink.php"
@@ -70,10 +77,5 @@
         "post-create-project-cmd": [
             "php bin/create_node_symlink.php"
         ]
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-main": "1.0-dev"
-        }
     }
 }
