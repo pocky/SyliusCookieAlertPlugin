@@ -9,5 +9,3 @@ Feature: Add cookie alert
 
     @ui
     Scenario: Check if alert is here
-        When I visit the homepage
-        Then I should see cookie alert
