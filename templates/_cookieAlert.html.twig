@@ -1,7 +1,7 @@
-<div class="alert text-center cookiealert" role="alert" {{ sylius_test_html_attribute('cookie-alert') }}>
+<div  class="alert text-center cookiealert" {{ stimulus_controller('cookie-alert') }}  role="alert" {{ sylius_test_html_attribute('cookie-alert') }}>
     {{ 'black_sylius_cookie_alert.ui.message'|trans|raw }} <a href="https://cookiesandyou.com/" target="_blank">{{ 'black_sylius_cookie_alert.ui.link'|trans }}</a>
 
-    <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+    <button type="button" data-action="cookie-alert#acceptCookie" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
         {{ 'black_sylius_cookie_alert.ui.agree'|trans }}
     </button>
 </div>
