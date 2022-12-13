@@ -1,8 +1,17 @@
-FROM php:7.4-fpm-alpine
+
+FROM alpine:latest as symfony-cli
+RUN set -eux;\
+    apk update; \
+    apk add --no-cache \
+    curl \
+    bash; \
+    curl -sS https://get.symfony.com/cli/installer | bash
+
+FROM php:8.1-fpm-alpine
 
 # Install composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
-COPY --from=symfonycorp/cli /symfony /usr/bin/symfony
+COPY --from=symfony-cli /root/.symfony5/bin/symfony /usr/bin/symfony
 
 # Install make
 RUN apk add --no-cache make
@@ -17,7 +26,7 @@ RUN apk add --no-cache \
 		mariadb-client \
 	;
 
-ARG APCU_VERSION=5.1.18
+ARG APCU_VERSION=5.1.22
 RUN set -eux; \
 	apk add --no-cache --virtual .build-deps \
 		$PHPIZE_DEPS \
