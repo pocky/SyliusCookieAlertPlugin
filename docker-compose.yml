@@ -33,7 +33,7 @@ services:
       - "3306:3306"
 
   nodejs:
-    image: node:10
+    image: node:16
     tty: true
     depends_on:
       - php
